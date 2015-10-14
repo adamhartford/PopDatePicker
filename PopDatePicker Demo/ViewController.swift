@@ -27,13 +27,13 @@ class ViewController: NSViewController {
     @IBAction func preferredEdgeChanged(sender: NSPopUpButton) {
         switch sender.indexOfSelectedItem {
         case 0:
-            datePicker.preferredPopoverEdge = NSMaxXEdge
+            datePicker.preferredPopoverEdge = .MaxX
         case 1:
-            datePicker.preferredPopoverEdge = NSMinXEdge
+            datePicker.preferredPopoverEdge = .MinX
         case 2:
-            datePicker.preferredPopoverEdge = NSMaxYEdge
+            datePicker.preferredPopoverEdge = .MaxY
         case 3:
-            datePicker.preferredPopoverEdge = NSMinYEdge
+            datePicker.preferredPopoverEdge = .MinY
         default:
             break
             

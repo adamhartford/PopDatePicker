@@ -10,11 +10,11 @@ import Cocoa
 
 public class PopDatePicker: NSDatePicker {
     
-    let controller = PopDatePickerController.new()
+    let controller = PopDatePickerController()
     let popover = NSPopover()
     var showingPopover = false
     
-    public var preferredPopoverEdge = NSMaxXEdge
+    public var preferredPopoverEdge = NSRectEdge.MaxX
     public var shouldShowPopover = { return true }
     
     public override func awakeFromNib() {
@@ -77,7 +77,7 @@ class PopDatePickerController: NSViewController {
         let popoverView = NSView(frame: NSMakeRect(0, 0, 180, 180))
         datePicker.datePickerStyle = .ClockAndCalendarDatePickerStyle
         datePicker.drawsBackground = false
-        let cell = datePicker.cell() as? NSDatePickerCell
+        let cell = datePicker.cell as? NSDatePickerCell
         cell?.bezeled = false
         cell?.sendActionOn(Int(NSEventType.LeftMouseDown.rawValue))
         popoverView.addSubview(datePicker)
