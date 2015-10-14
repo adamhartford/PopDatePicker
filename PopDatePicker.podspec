@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'PopDatePicker'
-  s.version = '0.1.0'
+  s.version = '0.2.0'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.summary = 'NSDatePicker with attached NSPopover'
   s.homepage = 'https://github.com/adamhartford/PopDatePicker'
