@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Adam Hartford. All rights reserved.
 //
 
-import Cocoa
+import AppKit
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -19,6 +19,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
+    }
+
+    func applicationShouldTerminateAfterLastWindowClosed (_ sender: NSApplication) -> Bool
+    {
+        return true
     }
 
 
