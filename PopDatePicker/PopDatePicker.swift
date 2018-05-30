@@ -14,7 +14,7 @@ final class PopDatePicker: NSDatePicker {
     let popover = NSPopover()
     var showingPopover = false
     
-    open var preferredPopoverEdge = NSRectEdge.maxX
+    open var preferredPopoverEdge = NSRectEdge.maxY
     open var shouldShowPopover = { return true }
     
     open override func awakeFromNib() {

@@ -5,18 +5,7 @@ PopDatePicker is an NSDatePicker subclass that provides an attached NSPopover. I
 
 ### Installation
 
-[CocoaPods](https://cocoapods.org):
-``` ruby
-platform :osx, '10.10'
-use_frameworks!
-
-pod 'PopDatePicker'
-```
-
-[Carthage](https://github.com/Carthage/Carthage):
-```
-github 'adamhartford/PopDatePicker'
-```
+Just add "PopDatePicker.swift" to your project it's all
 
 ### Usage
 
