@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Adam Hartford. All rights reserved.
 //
 
-import Cocoa
+import AppKit
 
-open class PopDatePicker: NSDatePicker {
+final class PopDatePicker: NSDatePicker {
     
     let controller = PopDatePickerController()
     let popover = NSPopover()

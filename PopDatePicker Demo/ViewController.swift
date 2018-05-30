@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Adam Hartford. All rights reserved.
 //
 
-import Cocoa
+import AppKit
 
 class ViewController: NSViewController  , NSDatePickerCellDelegate {
     
@@ -25,7 +25,6 @@ class ViewController: NSViewController  , NSDatePickerCellDelegate {
         super.viewDidLoad()
 
         datePicker.dateValue = Date()
-        
         datePicker.shouldShowPopover = { [weak self] in
             return self?.showPopoverButton.state == .on
         }
@@ -34,6 +33,7 @@ class ViewController: NSViewController  , NSDatePickerCellDelegate {
     }
     
     func datePickerCell(_ datePickerCell: NSDatePickerCell, validateProposedDateValue proposedDateValue: AutoreleasingUnsafeMutablePointer<NSDate>, timeInterval proposedTimeInterval: UnsafeMutablePointer<TimeInterval>?) {
+
         let date1 = proposedDateValue.pointee
         let dateString = formatterDate.string(from: date1 as Date)
         print (dateString)
